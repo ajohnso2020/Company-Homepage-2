@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    }
+.container {
+        width: 375px;
+        height: auto;
+        margin: auto;
+        border: 1px solid lightgrey;
+    }
+.header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        background-color: black;
+      }
+h1 {
+        text-align: center;
+        margin: 20px 0;
+    }    
+h2 {
+        text-align: justify;
+    }
+h3{
+        color:wheat;
+    }
+ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        padding-left: 0;
+    }    
+nav ul {
+        padding: 0;
+    }
+i { 
+        color: gold;
+        font-size: 22px;
+    }
+i:hover {
+        color: white;
+    }
+p {
+        text-align: center;
+        color: wheat;
+    }
+    
+/* mission section */
