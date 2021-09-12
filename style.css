@@ -18,7 +18,7 @@ body {
         position: fixed;
         top: 0;
         width: 100%;
-        height: 100px;
+        height: 120px;
         background-color: black;
       }
 h1 {
@@ -26,7 +26,8 @@ h1 {
         margin: 20px 0;
     }    
 h2 {
-        text-align: justify;
+        text-align: center;
+        padding: 20px;
     }
 h3{
         color:wheat;
@@ -50,6 +51,69 @@ i:hover {
 p {
         text-align: center;
         color: wheat;
+        line-height: 1.7em;
+        font-size: 1.2em;
     }
     
 /* mission section */
+
+.mission {
+    margin-top: 100px;
+    height: 500px;
+    border-bottom: 1px solid gold;
+ }
+ .mission img {
+     display: inline-flex;
+     width: 100%;
+ }
+ 
+ /* portfolio section */
+
+.portfolio {
+    height: 800px;
+    border-bottom: 1px solid gold;
+}
+.portfolio img {
+    width: 100%;
+    height: 200px;
+}
+    /* team section */
+.team {
+    height: 800px;
+    border-bottom: 1px solid gold;
+}
+.team img {
+    width: 100%;
+    height: 200px;
+}
+
+/* info section */
+
+.info {
+    height: 500px;
+    text-align: center;
+    color: gold;
+    border-bottom: 1px solid gold;
+}
+.info img {
+       width: 100%;
+}
+
+/* footer section */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 1.5em;
+    padding: .5em;
+    background-color: black;
+}
+.year {
+  padding-left: .5em;  
+}
+.location {
+ padding-right: 1.8em;
+}
