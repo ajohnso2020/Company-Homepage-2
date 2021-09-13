@@ -10,8 +10,6 @@ body {
     }
 .container {
         width: 375px;
-        height: auto;
-        margin: auto;
         border: 1px solid lightgrey;
     }
 .header {
@@ -21,6 +19,9 @@ body {
         height: 120px;
         background-color: black;
       }
+.words {
+    display: none;
+}      
 h1 {
         text-align: center;
         margin: 20px 0;
@@ -46,15 +47,14 @@ i {
         font-size: 22px;
     }
 i:hover {
-        color: white;
+        transform: scale(1.5);
     }
 p {
         text-align: center;
         color: wheat;
-        line-height: 1.7em;
-        font-size: 1.2em;
-    }
-    
+        line-height: 1.65em;
+        font-size: 1.1em;
+    }    
 /* mission section */
 
 .mission {
@@ -97,6 +97,11 @@ p {
 }
 .info img {
        width: 100%;
+       padding-bottom: 20px;
+}
+.info h3:hover {
+    transform: scale(1.1);
+    color: white;
 }
 
 /* footer section */
@@ -117,3 +122,60 @@ footer{
 .location {
  padding-right: 1.8em;
 }
+
+@media only screen and (min-width: 618px) {
+    h2 {
+        text-align: center;
+        width: 100%;
+    }
+    .words {
+        display: block;
+        color: gold;
+    }
+    .words:hover {
+        transform: scale(1.5);
+        color: white;
+    }
+    .header i {
+        display: none;
+    }
+     /* portfolio section */
+
+    .portfolio {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .portfolio img{
+        width: 50%;
+        margin: 20px;
+        flex: 1;
+    }
+    .portfolio p {
+        font-size: larger;
+        margin: 100px;
+        flex: 1;
+    }
+     /* team section */
+    .team {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .team img{
+        width: 50%;
+        margin: 20px;
+        flex: 1;
+    }
+    .team p {
+        font-size: larger;
+        margin: auto;
+        flex: 1;
+    }
+}
+@media only screen and (min-width: 839px) {
+    .portfolio {
+        height: 1000px;
+    }
+    .portfolio p {
+        margin: 150px;
+    } 
+ }
